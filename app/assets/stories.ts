@@ -13,14 +13,14 @@ export const stories = [{
     Date: "17/10/2024",
     icon: "/avatar.png"
 },
-    // {
-    //     name: "Islam Mohamed",
-    //     Date: "17/10/2024",
-    //     icon: "/avatar.png"
-    // },
-    // {
-    //     name: "Hussien Mohamed",
-    //     Date: "17/10/2024",
-    //     icon: "/avatar.png"
-    // }
+    {
+        name: "Islam Mohamed",
+        Date: "17/10/2024",
+        icon: "/avatar.png"
+    },
+    {
+        name: "Hussien Mohamed",
+        Date: "17/10/2024",
+        icon: "/avatar.png"
+    }
 ]
