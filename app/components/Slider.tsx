@@ -34,6 +34,7 @@ const Slider = () => {
           name={story.name}
           icon={story.icon}
           date={story.Date}
+          id={story.id}
         />
       ))}
       <Image

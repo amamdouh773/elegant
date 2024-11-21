@@ -1,13 +1,16 @@
-import React from 'react'
-import Nav from '../components/Nav'
+import React from "react";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import AboutCompany from "../sections/AboutCompany";
 
 const About = () => {
   return (
-    <div>
+    <>
       <Nav />
-      About Us
-    </div>
-  )
-}
+      <AboutCompany />
+      <Footer />
+    </>
+  );
+};
 
-export default About
+export default About;

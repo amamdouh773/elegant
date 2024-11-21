@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Header = ({text}:{text:string}) => {
+const HeaderComponent = ({text,style}:{text:string,style?:string}) => {
   return (
-       <p className="text-primary text-header underline decoration-primary underline-offset-[15px] mb-20">{text}</p>
+       <p className={"text-primary text-header underline decoration-primary decoration-2 underline-offset-[15px] mb-20 "+style}>{text}</p>
+       
   )
 }
 
-export default Header
+export default HeaderComponent
