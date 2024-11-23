@@ -1,0 +1,30 @@
+{
+    "NavbarLinks": {
+        "home": "الرئيسية",
+        "about-us": "من نحن",
+        "services": "الخدمات",
+        "stories": "القصص",
+        "contact-us": "تواصل معنا"
+    },
+    "Hero":{
+        "title": "أبسط وسيلة للهجرة",
+        "sub-title": "وفر مجهودك مع إيليجنت",
+        "contact-us": "تواصل معنا"
+    },
+    "AboutUs-section":{
+        "title": "من نحن؟",
+        "description": "شركة إيليجنت للخدمات العامة شركة مسجلة لدى الحكومة الكندية",
+        "know": "إعرف المزيد"
+    },
+    "Services-section":{
+        "title": "ماذا نقدم؟",
+        "student": "التقديم على فيزا دراسة",
+        "visitor": "التقديم على فيزا زيارة وسياحة",
+        "immigration": "إستشارة للهجرة",
+        "know": "إعرف المزيد"
+    },
+    "Stories-section":{
+        "title": "قصص النجاح",
+        "explore": "إكتشف"
+    }
+}

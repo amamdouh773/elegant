@@ -1,11 +1,10 @@
-import HomePage from "./components/Home";
-import Nav from "./components/Nav";
+import HomePage from "../components/Home";
+
 
 
 export default function Home() {
   return (
     <div className="font-sans">
-      <Nav />
       <HomePage />
     </div>
   );

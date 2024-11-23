@@ -1,0 +1,30 @@
+{
+    "NavbarLinks": {
+        "home": "Home",
+        "about-us": "About Us",
+        "services": "Services",
+        "stories": "Stories",
+        "contact-us": "Contact US"
+    },
+    "Hero":{
+        "title": "A simple Approach to immigration process",
+        "sub-title": "Save Your Resources With Elegant",
+        "contact-us": "Contact US"
+    },
+    "AboutUs-section":{
+        "title": "Who Are We?",
+        "description": "ELEGANT PUBLIC SERVICES is a registered Canadian Immigration firm under the Federal and Provincial Government of Canada`s registry authorities.",
+        "know": "Know More"
+    },
+    "Services-section":{
+        "title": "What Do We Offer?",
+        "student": "Apply Student Visa",
+        "visitor": "Apply Visitor & Tourism Visa",
+        "immigration": "Immigration Consultancy",
+        "know": "Know More"
+    },
+    "Stories-section":{
+        "title": "Success Stories",
+        "explore": "Explore"
+    }
+}
