@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-const Hero = () => {
+const Hero = ({locale}:{locale:string}) => {
   const t = useTranslations("Hero");
   return (
     <div className="flex items-center justify-center flex-col ">
@@ -13,7 +13,7 @@ const Hero = () => {
         <p className="font-extrabold text-primary text-header">{t("title")}</p>
         <p className="font-normal text-[40px] mt-[33px]">{t("sub-title")}</p>
       </div>
-      <Link  href="/contact"> <Button text={t("contact-us")} /></Link>
+      <Link  href={locale + "/contact"}> <Button text={t("contact-us")} /></Link>
     </div>
   );
 };

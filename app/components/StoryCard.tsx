@@ -7,9 +7,10 @@ type storiesProps = {
   icon: string;
   date: string;
   id: string;
+  locale: string;
 };
 
-const StoryCard = ({ name, icon, date, id }: storiesProps) => {
+const StoryCard = ({ name, icon, date, id,locale }: storiesProps) => {
   const t = useTranslations("Stories-section");
   return (
     <div className="flex  flex-col gap-4 justify-center items-center px-7 py-6 border-2 rounded-xl border-primary">
@@ -21,7 +22,7 @@ const StoryCard = ({ name, icon, date, id }: storiesProps) => {
         </div>
       </div>
       <Link
-        href={`/stories/${id}`}
+        href={`${locale}/stories/${id}`}
         className="bg-primary py-3 px-2 w-32 font-bold text-center text-white rounded-xl  text-sm"
       >
         {t("explore")}

@@ -4,13 +4,13 @@ import About from '../sections/About'
 import Services from '../sections/Services'
 import Stories from '../sections/Stories'
 
-const HomePage = () => {
+const HomePage = ({locale}:{locale:string}) => {
   return (
     <div>
-      <Hero />
-      <About />
-      <Services />
-      <Stories />
+      <Hero locale={locale}/>
+      <About locale={locale} />
+      <Services locale={locale} />
+      <Stories locale={locale} />
     </div>
   )
 }

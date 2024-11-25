@@ -4,7 +4,7 @@ import { stories } from "../assets/stories";
 import StoryCard from "./StoryCard";
 import Image from "next/image";
 
-const Slider = () => {
+const Slider = ({locale}:{locale:string|string[]|undefined}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
@@ -35,6 +35,7 @@ const Slider = () => {
           icon={story.icon}
           date={story.Date}
           id={story.id}
+          locale={locale}
         />
       ))}
       <Image

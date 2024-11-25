@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-const About = () => {
+const About = ({locale}:{locale:string|string[]|undefined}) => {
   const t = useTranslations("AboutUs-section")
   return (
     <div className="flex justify-between items-start m-14 pb-10">
@@ -13,7 +13,7 @@ const About = () => {
         <p className="font-normal text-[32px] w-[640px] mb-[20px] leading-[60px]">
           {t("description")}
         </p>
-        <Link href="/about" className="self-center"><Button text={t("know")} /></Link>
+        <Link href={locale +"/about"} className="self-center"><Button text={t("know")} /></Link>
       </div>
       <video src="../about-video.mp4" controls={true} width={700} about="About Video" className="self-center"/>
     </div>

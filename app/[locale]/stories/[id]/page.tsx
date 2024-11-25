@@ -1,6 +1,4 @@
 import { stories } from "@/app/assets/stories";
-import Footer from "@/app/components/Footer";
-import Nav from "@/app/components/Nav";
 import React from "react";
 import Image from "next/image";
 import Button from "@/app/components/Button";
@@ -10,7 +8,6 @@ const page = async ({ params }: { params: { id: string } }) => {
   const user = stories.filter((story) => story.id === id)[0];
   return (
     <div>
-      <Nav />
       <div className="flex flex-col items-center justify-center p-6 gap-28">
         <div className="flex justify-center items-center gap-16">
           <div className="flex flex-col gap-5">
@@ -46,7 +43,6 @@ const page = async ({ params }: { params: { id: string } }) => {
             <Image src="/logo.png" width={400} height={300} className="w-96 h-72 mr-20" alt="logo"/> 
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

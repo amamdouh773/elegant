@@ -8,18 +8,20 @@ import { usePathname, useRouter } from "next/navigation";
 
 const Nav = ({ locale }: { locale: string }) => {
   const t = useTranslations("NavbarLinks");
-  const pathname = usePathname();
+  const pathname = usePathname().replace(`/${locale}`, "");
   const router = useRouter();
-
+  console.log(pathname);
   const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value as string;
     const path = pathname.split("/").slice(2).join("/");
-    console.log(path); 
     router.push(`/${newLocale}/${path}`);
   };
   navItems.filter((item) =>
-    pathname.replace(locale,"").includes(item.href) ? (item.isActive = true) : (item.isActive = false)
+    pathname === (item.href)
+      ? (item.isActive = true)
+      : (item.isActive = false)
   );
+  // console.log(navItems);
   return (
     <div className="flex justify-between items-center w-full p-[20px] shadow shadow-m">
       <Image
