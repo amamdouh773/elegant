@@ -6,7 +6,7 @@ import { locations } from "../assets/locations";
 import { numbers } from "../assets/numbers";
 const Footer = () => {
   return (
-    <div className="flex justify-between items-start bg-primary p-4 min-h-48">
+    <div className="flex justify-between items-start bg-primary p-4 min-h-48 ltr">
       <div>
         <p className="text-xl text-white mb-2">Social Media</p>
         <div className="flex gap-3">

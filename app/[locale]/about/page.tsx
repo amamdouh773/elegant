@@ -1,10 +1,12 @@
 import React from "react";
 import AboutCompany from "../../sections/AboutCompany";
+import Branches from "@/app/components/Branches";
 
-const About = () => {
+const About = ({params:{locale}}:{params: {locale:string}}) => {
   return (
     <>
-      <AboutCompany />
+      <AboutCompany locale={locale}/>
+      <Branches />
     </>
   );
 };

@@ -33,7 +33,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${locale === "ar" ? "rtl":"ltr"}`}
       >
         <NextIntlClientProvider messages={messages}>
           <Nav locale={locale} />

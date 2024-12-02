@@ -1,30 +1,56 @@
 {
-    "NavbarLinks": {
-        "home": "الرئيسية",
-        "about-us": "من نحن",
-        "services": "الخدمات",
-        "stories": "القصص",
-        "contact-us": "تواصل معنا"
-    },
-    "Hero":{
-        "title": "أبسط وسيلة للهجرة",
-        "sub-title": "وفر مجهودك مع إيليجنت",
-        "contact-us": "تواصل معنا"
-    },
-    "AboutUs-section":{
-        "title": "من نحن؟",
-        "description": "شركة إيليجنت للخدمات العامة شركة مسجلة لدى الحكومة الكندية",
-        "know": "إعرف المزيد"
-    },
-    "Services-section":{
-        "title": "ماذا نقدم؟",
-        "student": "التقديم على فيزا دراسة",
-        "visitor": "التقديم على فيزا زيارة وسياحة",
-        "immigration": "إستشارة للهجرة",
-        "know": "إعرف المزيد"
-    },
-    "Stories-section":{
-        "title": "قصص النجاح",
-        "explore": "إكتشف"
-    }
+  "NavbarLinks": {
+    "home": "الرئيسية",
+    "about-us": "من نحن",
+    "services": "الخدمات",
+    "stories": "القصص",
+    "contact-us": "تواصل معنا"
+  },
+  "Hero": {
+    "title": "أبسط وسيلة للهجرة",
+    "sub-title": "وفر مجهودك مع إيليجنت",
+    "contact-us": "تواصل معنا"
+  },
+  "AboutUs-section": {
+    "title": "من نحن؟",
+    "description": "شركة إيليجنت للخدمات العامة شركة مسجلة لدى الحكومة الكندية",
+    "know": "إعرف المزيد"
+  },
+  "Services-section": {
+    "title": "ماذا نقدم؟",
+    "student": "التقديم على فيزا دراسة",
+    "visitor": "التقديم على فيزا زيارة وسياحة",
+    "immigration": "إستشارة للهجرة",
+    "know": "إعرف المزيد"
+  },
+  "Stories-section": {
+    "title": "قصص النجاح",
+    "explore": "إكتشف"
+  },
+  "About-Page": {
+    "title": "إيليجانت فيزا كندا",
+    "team-title": "فريقنا يجعلنا مختلفين",
+    "team-description": "سيحرص الموظفون المحترفون في Elegant Services على الاستفادة الكاملة من معرفتهم بمختلف جوانب الهجرة إلى كندا أثناء العمل مع شركائهم العديدين. ولجعل مشروعك الكندي ناجحًا، نقدم بخبرة مجموعة واسعة من الخدمات.",
+    "client-title": "أكثر من مجرد عميل",
+    "client-description": "أنت أكثر من مجرد عميل بالنسبة لنا. نعدك بتقديم خدمة تحترم توقعاتك والتزاماتك وحقوقك وقيودك، فضلاً عن ثقتك بنا قبل كل شيء. يستحق كل عميل أن يتم التعامل معه وأخذه في الاعتبار بشكل فردي. يبذل فريقنا قصارى جهده لجعل قضيتك فعالة قدر الإمكان",
+    "services-title": "ما بعد الخدمة",
+    "services-description": "بالإضافة إلى تقديم الخدمات، فإننا ندرك قيمة التعاطف والتشجيع والطمأنينة والحفاظ على علاقة عمل إيجابية، خاصة خلال الأوقات الصعبة. شعارنا هو \"يمكنك الاعتماد علينا لدعمك طوال عملية الهجرة\".",
+    "tunisia": "فرع تونس",
+    "tunisia-hours-1": "الإثنين حتى الأربعاء من الساعة 9 صباحا حتى الساعة 5 مساءا",
+    "tunisia-hours-2": "السبت من الساعة 9 صباحا حتى الساعة 1 مساءا",
+    "tunisia-address": "Tunis, lac1, Rue hasib Ben Ammar, Résidence El Habib bloc 1 3éme étage bureau n'10",
+    "egypt": "Egypt Branch",
+    "hours": "Opening Hours",
+    "egypt-hours-1": "Saturday to Wednesday From 9 AM to 8 PM",
+    "egypt-hours-2": "Thursday From 9 AM to 5 PM",
+    "address": "Address",
+    "egypt-address": "30 Elrshidi, Sheraton Al Matar, El Nozha, Cairo Governorate 11511",
+    "contact": "Contacts",
+    "canada": "Canada Branch",
+    "canada-hours-1": "Monday to Friday From 10 AM to 5 PM",
+    "canada-address": "2425 Matheson Blvd E",
+    "jordan": "Jordan Branch",
+    "jordan-hours-1": "Sunday to Thursday From 10 AM to 3 PM",
+    "jordan-address": "Al-Waha Cir, Amman, Jordan"
+  }
 }

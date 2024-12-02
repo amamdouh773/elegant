@@ -2,17 +2,20 @@ import React from 'react'
 import HeaderComponent from '../components/HeaderComponent'
 import { aboutData } from '../assets/aboutData'
 import AboutCard from '../components/AboutCard'
+import { useTranslations } from 'next-intl'
 
 
-const AboutCompany = () => {
+const AboutCompany = ({locale}:{locale:string}) => {
+  const t = useTranslations("About-Page");
   return (
-    <div className="flex flex-col items-end justify-start">
-    <HeaderComponent text="Elegant Visa Canada" style="self-center" />
+    <div className="flex flex-col items-end justify-start ltr">
+    <HeaderComponent text={t("title")} style="self-center" />
     {aboutData.map((item) => (
       <AboutCard
-        title={item.title}
-        description={item.description}
+        title={t(item.title)}
+        description={t(item.description)}
         url={item.url}
+        locale= {locale}
         key={item.title}
       />
     ))}

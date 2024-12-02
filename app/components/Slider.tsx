@@ -4,7 +4,7 @@ import { stories } from "../assets/stories";
 import StoryCard from "./StoryCard";
 import Image from "next/image";
 
-const Slider = ({locale}:{locale:string|string[]|undefined}) => {
+const Slider = ({locale}:{locale:string}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
@@ -19,7 +19,7 @@ const Slider = ({locale}:{locale:string|string[]|undefined}) => {
     setCurrentIndex(0);
   }
   return (
-    <div className="flex justify-between items-center w-full mt-10">
+    <div className="flex justify-between items-center w-full mt-10 ltr">
       <Image
         src="/left-arrow.png"
         alt="arrow"

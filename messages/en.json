@@ -1,30 +1,56 @@
 {
-    "NavbarLinks": {
-        "home": "Home",
-        "about-us": "About Us",
-        "services": "Services",
-        "stories": "Stories",
-        "contact-us": "Contact US"
-    },
-    "Hero":{
-        "title": "A simple Approach to immigration process",
-        "sub-title": "Save Your Resources With Elegant",
-        "contact-us": "Contact US"
-    },
-    "AboutUs-section":{
-        "title": "Who Are We?",
-        "description": "ELEGANT PUBLIC SERVICES is a registered Canadian Immigration firm under the Federal and Provincial Government of Canada`s registry authorities.",
-        "know": "Know More"
-    },
-    "Services-section":{
-        "title": "What Do We Offer?",
-        "student": "Apply Student Visa",
-        "visitor": "Apply Visitor & Tourism Visa",
-        "immigration": "Immigration Consultancy",
-        "know": "Know More"
-    },
-    "Stories-section":{
-        "title": "Success Stories",
-        "explore": "Explore"
-    }
+  "NavbarLinks": {
+    "home": "Home",
+    "about-us": "About Us",
+    "services": "Services",
+    "stories": "Stories",
+    "contact-us": "Contact US"
+  },
+  "Hero": {
+    "title": "A simple Approach to immigration process",
+    "sub-title": "Save Your Resources With Elegant",
+    "contact-us": "Contact US"
+  },
+  "AboutUs-section": {
+    "title": "Who Are We?",
+    "description": "ELEGANT PUBLIC SERVICES is a registered Canadian Immigration firm under the Federal and Provincial Government of Canada`s registry authorities.",
+    "know": "Know More"
+  },
+  "Services-section": {
+    "title": "What Do We Offer?",
+    "student": "Apply Student Visa",
+    "visitor": "Apply Visitor & Tourism Visa",
+    "immigration": "Immigration Consultancy",
+    "know": "Know More"
+  },
+  "Stories-section": {
+    "title": "Success Stories",
+    "explore": "Explore"
+  },
+  "About-Page": {
+    "title": "Elegant Visa Canada",
+    "team-title": "Our Team Makes Us Special",
+    "team-description": "The professional staff at Elegant Services will make sure you fully utilise their knowledge of the various facets of migrating to Canada while working with their numerous partners. To make your Canadian project a success, we expertly offer a wide range of services.",
+    "client-title": "More Than Just A Client",
+    "client-description": "You are more than just a client to us. We promise to give you a service that honours your expectations, commitments, rights, and restrictions as well as, above all else, your trust. Every client deserves to be treated and taken into account individually. Every effort is made to make your case as effective as it can be by our team",
+    "services-title": "Beyond The Services",
+    "services-description": "Beyond providing services, we are aware of the value of being sympathetic, encouraging, reassuring, and maintaining a positive working relationship, particularly during difficult times. Our slogan is \"You can rely on us to support you throughout the immigration process.\"",
+    "tunisia": "Tunisia Branch",
+    "tunisia-hours-1": "Monday to Friday From 9 AM to 5 PM",
+    "tunisia-hours-2": "Saturday From 9 AM to 1 PM",
+    "tunisia-address": "Tunis, lac1, Rue hasib Ben Ammar, Résidence El Habib bloc 1 3éme étage bureau n'10",
+    "egypt": "Egypt Branch",
+    "hours": "Opening Hours",
+    "egypt-hours-1": "Saturday to Wednesday From 9 AM to 8 PM",
+    "egypt-hours-2": "Thursday From 9 AM to 5 PM",
+    "address": "Address",
+    "egypt-address": "30 Elrshidi, Sheraton Al Matar, El Nozha, Cairo Governorate 11511",
+    "contact": "Contacts",
+    "canada": "Canada Branch",
+    "canada-hours-1": "Monday to Friday From 10 AM to 5 PM",
+    "canada-address": "2425 Matheson Blvd E",
+    "jordan": "Jordan Branch",
+    "jordan-hours-1": "Sunday to Thursday From 10 AM to 3 PM",
+    "jordan-address": "Al-Waha Cir, Amman, Jordan"
+  }
 }
