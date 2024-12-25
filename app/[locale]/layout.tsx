@@ -22,13 +22,15 @@ export const metadata: Metadata = {
   description: "Elegant Visa Services",
 };
 
+interface LayoutProps {
+  children: React.ReactNode;
+  params: { locale: string };
+}
+
 export default async function RootLayout({
   children,
   params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
+}: LayoutProps) {
   const {locale} = await params;
   const messages = await getMessages({ locale });
   return (
