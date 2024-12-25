@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-type serviceProps = {
+type ServiceProps = {
   name: string;
   icon: string;
   details: string;
   isList: boolean;
-  list?: { name: string; icon: string }[];
+  list?: { icon: string }[];
 };
 
 const ServiceDetails = ({
@@ -15,31 +15,43 @@ const ServiceDetails = ({
   details,
   isList,
   list,
-}: serviceProps) => {
+}: ServiceProps) => {
   return (
-    <div className="flex justify-between items-center mr-16  gap-20 px-15 ml-10">
-      <div className="flex flex-col items-center gap-3 justify-start">
-        <Image src={icon} width={100} height={100} alt="icon" />
-        <p className="text-primary text-xl underline font-bold">{name}</p>
+    <div className="flex flex-col items-center  gap-8 lg:gap-16 p-6 rounded-lg shadow-lg bg-white max-w-6xl mx-auto">
+      {/* Service Icon and Name */}
+      <div className="flex flex-col justify-center items-center gap-3">
+        <Image
+          src={icon}
+          width={256}
+          height={256}
+          alt={`${name} Icon`}
+          className="w-40 h-40 object-contain lg:w-64 lg:h-64"
+        />
+        <p className="text-primary text-2xl font-bold underline underline-offset-4 text-center">
+          {name}
+        </p>
       </div>
-      <div className="max-w-lg  flex flex-col mr-10 items-start justify-start">
-        <p className="text-lg font-light">{details}</p>
+
+      {/* Service Details and List */}
+      <div className="flex flex-col items-center gap-4 max-w-2xl text-left">
+        <p className="text-gray-700 text-lg font-light leading-relaxed">
+          {details}
+        </p>
 
         {isList && (
-          <div className="flex justify-center items-center w-full gap-10 mt-5">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-4 w-full ">
             {list?.map((item) => (
               <div
-                className="flex flex-col items-center justify-center gap-2"
-                key={item.name}
+                key={item.icon}
+                className="flex flex-col items-center text-center rounded-xl border-primary border-2"
               >
                 <Image
                   src={item.icon}
-                  alt={item.name}
-                  width={50}
-                  height={50}
-                  className="rounded-full"
+                  alt={item.icon}
+                  width={64}
+                  height={64}
+                  className="w-16 h-16 object-contain"
                 />
-                <p className="text-sm font-thin">{item.name}</p>
               </div>
             ))}
           </div>

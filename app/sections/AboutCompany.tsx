@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl'
 const AboutCompany = ({locale}:{locale:string}) => {
   const t = useTranslations("About-Page");
   return (
-    <div className="flex flex-col items-end justify-start ltr">
+    <div className="flex flex-col items-end justify-start ltr max-lg:justify-center max-lg:items-center">
     <HeaderComponent text={t("title")} style="self-center" />
     {aboutData.map((item) => (
       <AboutCard

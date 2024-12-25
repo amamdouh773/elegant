@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import { stories } from "../assets/stories";
 import StoryCard from "./StoryCard";
 import Image from "next/image";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
 const Slider = ({locale}:{locale:string}) => {
+  const {width} = useWindowDimensions()
   const [currentIndex, setCurrentIndex] = useState(0);
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % stories.length);
@@ -25,10 +27,10 @@ const Slider = ({locale}:{locale:string}) => {
         alt="arrow"
         height={55}
         width={55}
-        className="cursor-pointer"
+        className="cursor-pointer max-lg:w-10"
         onClick={handlePrev}
       />
-      {stories.slice(currentIndex, currentIndex + 3).map((story) => (
+      {(width > 1024 ? stories.slice(currentIndex, currentIndex + 3): width > 768 ?  stories.slice(currentIndex, currentIndex + 2):stories.slice(currentIndex, currentIndex + 1)).map((story) => (
         <StoryCard
           key={story.name}
           name={story.name}
@@ -43,7 +45,7 @@ const Slider = ({locale}:{locale:string}) => {
         alt="arrow"
         height={55}
         width={55}
-        className="cursor-pointer"
+        className="cursor-pointer max-lg:w-10"
         onClick={handleNext}
       />
     </div>

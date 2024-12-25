@@ -9,7 +9,8 @@
   "Hero": {
     "title": "A simple Approach to immigration process",
     "sub-title": "Save Your Resources With Elegant",
-    "contact-us": "Contact US"
+    "contact-us": "Contact US",
+    "slogan": "Elegant Your gate for a better Future"
   },
   "AboutUs-section": {
     "title": "Who Are We?",
@@ -21,6 +22,7 @@
     "student": "Apply Student Visa",
     "visitor": "Apply Visitor & Tourism Visa",
     "immigration": "Immigration Consultancy",
+    "settlment": "Settlment Services",
     "know": "Know More"
   },
   "Stories-section": {
@@ -28,7 +30,7 @@
     "explore": "Explore"
   },
   "About-Page": {
-    "title": "Elegant Visa Canada",
+    "title": "Elegant Public Services",
     "team-title": "Our Team Makes Us Special",
     "team-description": "The professional staff at Elegant Services will make sure you fully utilise their knowledge of the various facets of migrating to Canada while working with their numerous partners. To make your Canadian project a success, we expertly offer a wide range of services.",
     "client-title": "More Than Just A Client",
@@ -52,5 +54,24 @@
     "jordan": "Jordan Branch",
     "jordan-hours-1": "Sunday to Thursday From 10 AM to 3 PM",
     "jordan-address": "Al-Waha Cir, Amman, Jordan"
+  },
+  "Services-Page": {
+    "title": "Explore Our",
+    "colored-title": "Services",
+    "student": "Apply Student Visa",
+    "student-details": "In Elegant public Services, we are committed to contributing to your Canadian education, immigration and visit dreams to come true. immigration study in Canada in Some Of the Biggest Universities in Canada",
+    "visitor": "Apply Visitor & Tourism Visa",
+    "visitor-details": "Are you planning to visit Canada as a tourist? That’s fantastic news! At **Elegant Public Services**, we are passionate about helping you turn this exciting plan into reality. Whether you’re looking to explore Canada’s breathtaking landscapes, immerse yourself in its rich culture, or reconnect with friends and family, we are here to guide you every step of the way. Let us simplify the process for you, ensuring your journey is seamless and filled with unforgettable experiences.",
+    "immigration": "Immigration Consultancy",
+    "immigration-details": "We proudly support our clients within Canada through a variety of tailored services, including guiding them on their journey toward obtaining permanent residency and eventually Canadian citizenship. Additionally, we assist with study permits, helping individuals access world-class education opportunities in Canada. Our expertise ensures a smooth and efficient process, empowering you to achieve your goals and build a successful future in Canada.",
+    "settlment": "Settlment Services",
+    "settlment-details": "Settlement Services provide essential support to individuals, families, and international students moving to Canada, ensuring smooth integration into their new environment. These services include (airport pickup, accommodation assistance, and help with banking services, Social Insurance Number (SIN) applications, and phone connections. They also cover employment services, language training, and credential recognition to aid newcomers in accessing job opportunities. Additional offerings include healthcare guidance, cultural orientation, financial assistance, and **community integration initiatives like networking events. With legal and immigration support, transportation guidance, and social support, these services aim to address all aspects of settling in Canada effectively."
+  },
+  "Founders": {
+    "title": "Elegant Founders",
+    "name-1": "Mohamed El-Hussein",
+    "about-1": "I'm [Mohamed El-Hussein], an entrepreneur specializing in the field of public services and the founder of [Elegant], a company managing four branches across four countries: Canada, Egypt, Jordan, and Tunisia.",
+    "name-2": "Abdullah El-Shadouh",
+    "about-2": "I'm [Abdullah Al-Shadouh], an entrepreneur speci`alizing in the field of public services and the founder of [Elegant], a company managing four branches across four countries: Canada, Egypt, Jordan, and Tunisia."
   }
 }

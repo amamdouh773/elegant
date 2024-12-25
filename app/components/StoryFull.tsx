@@ -15,7 +15,7 @@ type storyProps = {
 const StoryFull = ({ name, date, icon, story, id }: storyProps) => {
   const pathname = usePathname();
   return (
-    <div className="flex justify-between items-center gap-14 mx-12 p-8 border-primary border-4 rounded-2xl w-[1340px]">
+    <div className="flex justify-between items-center gap-14 mx-12 p-8 border-primary border-4 rounded-2xl w-[1340px] max-md:flex-col">
       <div className="flex flex-col items-center">
         <Image
           src={icon}

@@ -1,5 +1,5 @@
 export const branches = [{
-    logo: "/Flag_of_Egypt.webp",
+    logo: "/egypt.jpg",
     country: "egypt",
     hours: [
         "egypt-hours-1",
@@ -10,7 +10,7 @@ export const branches = [{
     mail: "egypt@elegant-visa.ca"
 },
 {
-    logo: "/Flag_of_Tunisia.webp",
+    logo: "/tunisia.jpg",
     country: "tunisia",
     hours: [
         "tunisia-hours-1",
@@ -21,7 +21,7 @@ export const branches = [{
     mail: "tunisia@elegant-visa.ca"
 },
 {
-    logo: "/Flag_of_Canada.webp",
+    logo: "/canada.jpg",
     country: "canada",
     hours: [
         "canada-hours-1",
@@ -31,7 +31,7 @@ export const branches = [{
     mail: "canada@elegant-visa.ca"
 },
 {
-    logo: "/Flag_of_Jordan.webp",
+    logo: "/jordan.webp",
     country: "jordan",
     hours: [
         "jordan-hours-1"

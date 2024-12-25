@@ -1,22 +1,34 @@
-import React from 'react'
-import HeaderComponent from '../components/HeaderComponent'
-import { services } from '../assets/services'
-import ServiceCard from '../components/ServiceCard'
-import { useTranslations } from 'next-intl'
+import React from "react";
+import HeaderComponent from "../components/HeaderComponent";
+import { services } from "../assets/services";
+import ServiceCard from "../components/ServiceCard";
+import { useTranslations } from "next-intl";
 
-const Services = ({locale}:{locale:string|string[]|undefined}) => {
-  const t = useTranslations("Services-section")
+const Services = ({
+  locale,
+}: {
+  locale: string | string[] | undefined;
+}) => {
+  const t = useTranslations("Services-section");
+
   return (
-    <div className='flex justify-start items-start flex-col m-14 pb-10'>
+    <div className="flex flex-col items-center px-4 py-8 sm:px-8 lg:px-16 gap-8">
+      {/* Section Header */}
       <HeaderComponent text={t("title")} />
-      <div className='flex justify-between gap-y-24 flex-wrap'>
-      {services.map(service=>
-      <ServiceCard key={service.name} icon={service.icon} name={t(service.name)} locale={locale} />
-      )
-      }
+
+      {/* Services Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[1200px]">
+        {services.slice(0, 4).map((service) => (
+          <ServiceCard
+            key={service.name}
+            icon={service.icon}
+            name={t(service.name)}
+            locale={locale}
+          />
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
