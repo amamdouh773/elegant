@@ -1,10 +1,11 @@
 import HomePage from "../components/Home";
 
 export default async function Home({
-  params:  { locale },
+  params
 }: {
-  params: { locale: string };
+  params: { locale: string }
 }) {
+  const {locale} = await params;
   return (
     <div className="font-sans">
       <HomePage locale={locale} />

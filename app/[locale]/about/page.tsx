@@ -3,11 +3,11 @@ import AboutCompany from "../../sections/AboutCompany";
 import Branches from "@/app/components/Branches";
 import AboutFounders from "@/app/sections/AboutFounders";
 
-const About = ({params:{locale}}:{params: {locale:string}}) => {
+const About = () => {
   return (
     <>
-      <AboutCompany locale={locale}/>
-      <AboutFounders locale={locale} />
+      <AboutCompany />
+      <AboutFounders />
       <Branches />
     </>
   );

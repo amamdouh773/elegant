@@ -5,7 +5,7 @@ import AboutCard from '../components/AboutCard'
 import { useTranslations } from 'next-intl'
 
 
-const AboutCompany = ({locale}:{locale:string}) => {
+const AboutCompany = () => {
   const t = useTranslations("About-Page");
   return (
     <div className="flex flex-col items-end justify-start ltr max-lg:justify-center max-lg:items-center">
@@ -15,7 +15,6 @@ const AboutCompany = ({locale}:{locale:string}) => {
         title={t(item.title)}
         description={t(item.description)}
         url={item.url}
-        locale= {locale}
         key={item.title}
       />
     ))}

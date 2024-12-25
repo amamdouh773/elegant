@@ -4,9 +4,7 @@ import { foundersData } from "../assets/FoundersData";
 import FounderCard from "../components/FounderCard";
 import { useTranslations } from "next-intl";
 
-const AboutFounders = ({ locale }: { locale: string }) => {
-  console.log(locale);
-  console.log(foundersData);
+const AboutFounders = () => {
   const t = useTranslations("Founders");
   return (
     <div>

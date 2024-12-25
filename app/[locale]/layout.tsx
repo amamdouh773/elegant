@@ -24,12 +24,13 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: Readonly<{
   children: React.ReactNode;
   params: { locale: string };
 }>) {
-  const messages = await getMessages();
+  const {locale} = await params;
+  const messages = await getMessages({ locale });
   return (
     <html lang={locale}>
       <body
