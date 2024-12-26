@@ -3,7 +3,12 @@ import React from "react";
 import Image from "next/image";
 import Button from "@/app/components/Button";
 
-const page = async ({ params }: { params: { id: string } }) => {
+type pageProps = {
+  params: Promise<{ id: string }>;
+}
+
+
+const page = async ({ params }:pageProps) => {
   const { id } = await params;
   const user = stories.filter((story) => story.id === id)[0];
   return (
