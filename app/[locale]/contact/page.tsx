@@ -1,42 +1,44 @@
 import ColoredHeader from "@/app/components/ColoredHeader";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 const Contact = () => {
+  const t = useTranslations("Contact");
   return (
     <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 lg:gap-20">
       {/* Left Section: Form */}
       <div className="w-full py-12 lg:w-8/12">
-        <ColoredHeader text="Get In " coloredText="Touch" style="text-center lg:text-left" />
+        <ColoredHeader text={t("title")} coloredText={t("subtitle")} style="text-center lg:text-left" />
         <form className="w-full max-w-xl mx-auto flex flex-col gap-8">
           <input
             type="text"
             name="name"
-            placeholder="Contact Name"
+            placeholder={t("name")}
             className="w-full border-b-2 border-b-primary pb-3 outline-none placeholder-gray-500"
             required
           />
           <input
-            type="tel"
+            type="text"
             name="tel"
-            placeholder="Contact Phone"
+            placeholder={t("tel")}
             className="w-full border-b-2 border-b-primary pb-3 outline-none placeholder-gray-500"
             required
           />
           <input
             type="text"
             name="city"
-            placeholder="City"
+            placeholder={t("city")}
             className="w-full border-b-2 border-b-primary pb-3 outline-none placeholder-gray-500"
           />
           <input
             type="email"
             name="email"
-            placeholder="Contact Email"
+            placeholder={t("email")}
             className="w-full border-b-2 border-b-primary pb-3 outline-none placeholder-gray-500"
           />
           <textarea
             name="message"
-            placeholder="Message"
+            placeholder={t("message")}
             rows={4}
             className="w-full border-b-2 border-b-primary pb-3 outline-none placeholder-gray-500 resize-none"
           />

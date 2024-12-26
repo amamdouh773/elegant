@@ -29,7 +29,7 @@ const ServiceCard = ({ icon, name, locale }: serviceProps) => {
           {name}
         </p>
         <Link
-          href={`${locale}`}
+          href={`${locale}/services`}
           className="text-lg md:text-xl text-primary font-medium underline decoration-primary underline-offset-4"
         >
           {t("know")}

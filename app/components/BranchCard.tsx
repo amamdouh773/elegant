@@ -21,7 +21,7 @@ const BranchCard = ({
 }: BranchProps) => {
   const t = useTranslations("About-Page");
   return (
-    <div className="flex flex-col items-center justify-between bg-white shadow-lg rounded-lg p-4 gap-6 w-full max-w-md h-fit min-h-[00px] mx-auto">
+    <div className="flex flex-col items-center justify-between bg-white shadow-lg rounded-lg p-4 gap-6 w-full max-w-md h-fit min-h-[500px] mx-auto">
       {/* Logo Section */}
       <div className="flex justify-center items-center w-32 h-32">
         <Image

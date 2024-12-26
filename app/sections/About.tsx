@@ -8,14 +8,14 @@ const About = ({ locale }: { locale: string | string[] | undefined }) => {
   const t = useTranslations("AboutUs-section");
 
   return (
-    <div className="flex flex-col bg-gray-100 lg:flex-row justify-between items-start px-4 py-8 sm:px-8 lg:px-16 gap-8">
+    <div className="flex flex-col bg-gray-100 lg:flex-row justify-between items-center px-4 py-8 sm:px-8 lg:px-16 gap-8">
       {/* Text Content */}
       <div className="flex flex-col gap-4 justify-center items-center lg:items-center max-lg:mt-5 text-center lg:text-left">
         <HeaderComponent text={t("title")} />
-        <p className="font-normal text-lg md:text-xl lg:text-2xl leading-relaxed max-w-[640px]">
+        <p className="font-normal text-lg md:text-xl lg:text-2xl leading-loose">
           {t("description")}
         </p>
-        <Link href={`${locale}/about`} className="self-center lg:self-start">
+        <Link href={`${locale}/about`}>
           <Button text={t("know")} />
         </Link>
       </div>

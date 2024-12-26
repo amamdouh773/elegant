@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl'
 const AboutCompany = () => {
   const t = useTranslations("About-Page");
   return (
-    <div className="flex flex-col items-end justify-start ltr max-lg:justify-center max-lg:items-center">
+    <div className="flex flex-col items-end justify-start ltr max-lg:justify-center max-lg:items-center py-10">
     <HeaderComponent text={t("title")} style="self-center" />
     {aboutData.map((item) => (
       <AboutCard

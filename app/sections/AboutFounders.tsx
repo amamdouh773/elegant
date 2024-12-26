@@ -8,7 +8,7 @@ const AboutFounders = () => {
   const t = useTranslations("Founders");
   return (
     <div>
-      <HeaderComponent text="Elegant Founders" />
+      <HeaderComponent text={t("founder-header")} />
       <div className="flex justify-around max-lg:flex-col">
         {foundersData.map((founder) => (
           <FounderCard

@@ -4,12 +4,8 @@ import About from "../sections/About";
 import Services from "../sections/Services";
 import Stories from "../sections/Stories";
 
-
-
 interface HomePageProps {
-
   locale: string;
-
 }
 
 const HomePage: React.FC<HomePageProps> = async (params) => {
@@ -25,6 +21,3 @@ const HomePage: React.FC<HomePageProps> = async (params) => {
 };
 
 export default HomePage;
-
-
-

@@ -68,10 +68,20 @@
     "settlment-details": "Settlement Services provide essential support to individuals, families, and international students moving to Canada, ensuring smooth integration into their new environment. These services include (airport pickup, accommodation assistance, and help with banking services, Social Insurance Number (SIN) applications, and phone connections. They also cover employment services, language training, and credential recognition to aid newcomers in accessing job opportunities. Additional offerings include healthcare guidance, cultural orientation, financial assistance, and **community integration initiatives like networking events. With legal and immigration support, transportation guidance, and social support, these services aim to address all aspects of settling in Canada effectively."
   },
   "Founders": {
+    "founder-header": "Elegant Founders",
     "title": "Elegant Founders",
     "name-1": "Mohamed El-Hussein",
     "about-1": "I'm [Mohamed El-Hussein], an entrepreneur specializing in the field of public services and the founder of [Elegant], a company managing four branches across four countries: Canada, Egypt, Jordan, and Tunisia.",
     "name-2": "Abdullah El-Shadouh",
     "about-2": "I'm [Abdullah Al-Shadouh], an entrepreneur speci`alizing in the field of public services and the founder of [Elegant], a company managing four branches across four countries: Canada, Egypt, Jordan, and Tunisia."
+  },
+  "Contact": {
+    "title": "Get in ",
+    "subtitle": "Touch",
+    "name": "Contact Name",
+    "tel": "Contact Phone",
+    "city" : "City",
+    "email": "Contact Email",
+    "message": "Message"
   }
 }
