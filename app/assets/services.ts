@@ -23,7 +23,7 @@ export const services = [
   },
   {
     icon: "/service-1.png",
-    image: "/service-img-1.jpg",
+    image: "/service-img-1.JPG",
     name: "student",
     details: "student-details",
     isList: true,
