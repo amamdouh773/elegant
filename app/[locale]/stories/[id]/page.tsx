@@ -21,12 +21,15 @@ const Page = async ({ params }: PageProps) => {
     <div className="flex flex-col items-center gap-16 px-6 py-12">
       {/* Video Section */}
       <div className="w-full max-w-4xl">
-        <video
-          src={user.video}
-          controls
-          className="w-full rounded-lg shadow-lg"
-        />
+        <div className="relative w-full pt-[56.25%] rounded-lg overflow-hidden shadow-lg">
+          <video
+            src={user.video}
+            controls
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </div>
       </div>
+
 
       {/* Story Header */}
       {/* <div className="text-start"></div> */}
