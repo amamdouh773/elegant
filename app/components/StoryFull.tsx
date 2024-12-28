@@ -1,38 +1,38 @@
-'use client'
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React from "react";
+'use client';
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import React from 'react';
 
 type storyProps = {
   name: string;
   date: string;
-  icon: string;
   story: string;
   id: string;
 };
 
-const StoryFull = ({ name, date, icon, story, id }: storyProps) => {
+const StoryFull = ({ name, date, story, id }: storyProps) => {
+  const t = useTranslations('Stories');
   const pathname = usePathname();
   return (
-    <div className="flex justify-between items-center gap-14 mx-12 p-8 border-primary border-4 rounded-2xl w-[1340px] max-md:flex-col">
-      <div className="flex flex-col items-center">
-        <Image
-          src={icon}
-          width={50}
-          height={50}
-          className="w-16 h-16 mb-6"
-          alt={name}
-        />
-        <p className="text-xl font-medium">{name}</p>
-        <p className="text-gray-500">{date}</p>
+    <div className="flex flex-col justify-between items-start gap-6 p-6 bg-white shadow-lg rounded-xl transition-transform transform hover:scale-105">
+      {/* Header Section */}
+      <div className="flex justify-between items-center w-full">
+        <p className="text-gray-500 text-sm">{date}</p>
+        <p className="text-lg font-bold text-primary">{name}</p>
       </div>
-      <p className="max-w-3xl">{story}</p>
+
+      {/* Story Preview */}
+      <p className="text-gray-700 text-sm leading-relaxed line-clamp-3">
+        {story}
+      </p>
+
+      {/* Call to Action */}
       <Link
         href={`${pathname}/${id}`}
-        className="bg-primary py-3 px-2 w-32 font-bold text-center text-white rounded-xl  text-sm"
+        className="bg-primary py-2 px-4 text-white font-medium text-sm rounded-lg shadow-md hover:bg-primary-dark transition-colors"
       >
-        Explore
+        {t('know')}
       </Link>
     </div>
   );

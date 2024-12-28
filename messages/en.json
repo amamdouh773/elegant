@@ -83,5 +83,10 @@
     "city" : "City",
     "email": "Contact Email",
     "message": "Message"
+  },
+  "Stories":{
+    "subheader": "Listen from",
+    "header": "Our Clients",
+    "know":"Know More"
   }
 }
