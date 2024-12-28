@@ -15,7 +15,7 @@ const StoryFull = ({ name, date, story, id }: storyProps) => {
   const t = useTranslations('Stories');
   const pathname = usePathname();
   return (
-    <div className="flex flex-col justify-between items-start gap-6 p-6 bg-white shadow-lg rounded-xl transition-transform transform hover:scale-105">
+    <div className="flex flex-col justify-between items-start gap-6 p-6 bg-white shadow-lg rounded-xl border-2 border-primary transition-transform transform hover:scale-105">
       {/* Header Section */}
       <div className="flex justify-between items-center w-full">
         <p className="text-gray-500 text-sm">{date}</p>

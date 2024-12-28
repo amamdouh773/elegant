@@ -7,10 +7,11 @@ import {
 } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
-import { locations } from "../assets/locations";
-import { numbers } from "../assets/numbers";
+import { branches } from "../assets/branches";
+import { useTranslations } from "next-intl";
 
-const Footer = () => {
+const Footer = () => { 
+  const t = useTranslations("About-Page")
   return (
     <footer className="bg-primary text-white py-8 px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
@@ -50,13 +51,13 @@ const Footer = () => {
         </div>
 
         {/* Locations Section */}
-        <div>
+        <div className="flex flex-col items-start justify-start">
           <h3 className="text-xl font-semibold mb-4">Locations</h3>
           <ul>
-            {locations.map((location, index) => (
+            {branches.map((branch, index) => (
               <li key={index} className="flex items-center gap-3 mb-3">
-                <FaLocationDot className="w-5 h-5" />
-                <p className="text-sm">{location}</p>
+                <FaLocationDot size={25} />
+                <p className="text-sm max-w-52">{t(branch.location)}</p>
               </li>
             ))}
           </ul>
@@ -66,10 +67,10 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Numbers</h3>
           <ul>
-            {numbers.map((number, index) => (
+            {branches.map((branch, index) => (
               <li key={index} className="flex items-center gap-3 mb-3">
                 <FaPhoneAlt className="w-5 h-5" />
-                <p className="text-sm">{number}</p>
+                <p className="text-sm">{branch.phone}</p>
               </li>
             ))}
           </ul>

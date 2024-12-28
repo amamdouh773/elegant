@@ -6,7 +6,7 @@ export const aboutData = [{
 {
     title: "client-title",
     description: "client-description",
-    url: "/about-1.jpg"
+    url: "/about-client.jpg"
 },
 {
     title: "services-title",

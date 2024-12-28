@@ -17,7 +17,7 @@ const ServiceDetails = ({
   list,
 }: ServiceProps) => {
   return (
-    <div className="flex flex-col items-center  gap-8 lg:gap-16 p-6 rounded-lg shadow-lg bg-white max-w-6xl mx-auto">
+    <div className="flex flex-col items-center  gap-8 lg:gap-16 p-6 rounded-lg border-2 border-primary shadow-lg bg-white max-w-6xl mx-auto">
       {/* Service Icon and Name */}
       <div className="flex flex-col justify-center items-center gap-3">
         <Image

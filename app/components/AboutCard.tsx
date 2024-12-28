@@ -17,7 +17,7 @@ const AboutCard = ({ title, description, url }: aboutProps) => {
         alt={title}
         width={300}
         height={300}
-        className="w-72 h-72 max-lg:w-52 max-lg:h-52"
+        className="w-72 h-72 max-lg:w-52 max-lg:h-52 rounded-lg border-2 border-white"
       />
       <div
         className={`flex flex-col justify-start items-center mx-8 gap-3 `}
